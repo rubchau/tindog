@@ -13,11 +13,11 @@ h1 {
 /************ Class Selectors ************/
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 5%;
 }
 
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 0 0 2.5rem;
 }
 
 .navbar-brand {
@@ -46,6 +46,8 @@ h1 {
 .dog_phone_image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 27%;
 }
 
 /* Features Section */
@@ -74,6 +76,42 @@ h1 {
   color: #ff4c68;
 }
 
+/* Testimonials */
+.testimonial-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 20%;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+/* Pricing */
+.plan-name {
+  font-weight: 600;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
 /************ ID Selectors **************/
 
 #title {
@@ -83,4 +121,55 @@ h1 {
 
 #features {
   padding: 7% 15%;
+  background-color: white;
+  /* "Relative" allows us to keep the element in the HTML flow but still enforce
+  a z-index position. Using absolute here would remove the element from the
+  HTML flow*/
+  position: relative;
+}
+
+#testimonials {
+  background-color: #ff4c68;
+  color: white;
+  text-align: center;
+}
+
+#press {
+  background-color: #ff4c68;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+/********* Media Query Breakpoints *********/
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .dog_phone_image {
+    width: 60%;
+    position: static;
+    transform: rotate(0deg);
+    right: 27%;
+  }
+
+  .testimonial-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .testimonial-image {
+    width: 40%;
+    margin: 20px;
+  }
+
 }
