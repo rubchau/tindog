@@ -2,32 +2,39 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: 3.0rem;
-  line-height: 1.5;
+  text-align: center;
 }
 
 /************ Class Selectors ************/
 
-/* General */
+/* Containers */
+.container-fluid {
+  padding: 3% 15% 5%;
+}
 
-.center {
-  text-align: center;
+/* Sections */
+.white-section {
+  background-color: white;
+  color: #52575d;
+}
+
+.colored-section {
+  background-color:#ff4c68;
+  color: white;
 }
 
 /***** Title Section *****/
-
-.container-fluid {
-  padding: 3% 15% 5%;
+.title-heading {
+  font-weight: 900;
+  font-size: 3.0rem;
+  line-height: 1.5;
 }
 
 /* Navigation Bar */
 
 .navbar {
   padding: 0 0 2.5rem;
+  background-color:#ff4c68;
 }
 
 .navbar-brand {
@@ -68,10 +75,6 @@ h1 {
   font-size: 1.5rem;
 }
 
-.features-subtitles {
-  color: #8f8f8f;
-}
-
 .feature-icons {
   font-size: 350%;
   color: #ef8172;
@@ -82,7 +85,7 @@ h1 {
   color: #ff4c68;
 }
 
-/* Testimonials */
+/***** Testimonials Section *****/
 .testimonial-text {
   font-weight: bold;
   font-size: 2.5rem;
@@ -104,7 +107,23 @@ h1 {
   padding: 7% 15%;
 }
 
-/* Pricing */
+.carousel-subheading {
+  padding-top: 3%;
+  font-size: 1.5rem;
+}
+
+/***** Pricing *****/
+
+.price-heading {
+  font-weight: 700;
+  font-size: 3.0rem;
+}
+
+.price-subheading {
+  font-size: 2.0rem;
+  padding: 0 10%;
+}
+
 .plan-name {
   font-weight: 600;
 }
@@ -117,7 +136,7 @@ h1 {
   padding: 3% 2%;
 }
 
-/* Call to Action */
+/***** Call to Action Section *****/
 .cta-btn {
   margin: 20px;
 }
@@ -130,10 +149,8 @@ h1 {
   padding-bottom: 20px;
 }
 
-/* Footer */
-
+/***** Footer Section *****/
 .footer-icon {
-  color: gray;
   font-size: 1.5rem;
   margin: 15px;
   padding-bottom: 10px;
@@ -143,34 +160,22 @@ h1 {
   color: #ff4c68;
 }
 
-/* Footer */
-.footer-text {
-  color: gray;
-}
-
 /************ ID Selectors **************/
 
 #title {
-  background-color: #ff4c68;
-  color: white;
+  text-align: left;
 }
 
 #features {
   padding: 7% 15%;
-  background-color: white;
+
   /* "Relative" allows us to keep the element in the HTML flow but still enforce
   a z-index position. Using absolute here would remove the element from the
   HTML flow*/
   position: relative;
 }
 
-#testimonials {
-  background-color: #ff4c68;
-  color: white;
-}
-
 #press {
-  background-color: #ff4c68;
   padding-bottom: 3%;
 }
 
@@ -179,14 +184,17 @@ h1 {
 }
 
 #cta {
-  background-color: #ff4c68;
   padding: 7% 19%;
 }
 
 #footer {
-  padding: 3% 3%;
+  padding: 5% 3%;
 }
+
 /********* Media Query Breakpoints *********/
+
+/* Which elements should be styled differently when
+the viewport is less than 1028px? */
 
 @media (max-width: 1028px) {
 
@@ -206,24 +214,33 @@ h1 {
   }
 
   .testimonial-text {
-    font-size: 2.0rem;
+    font-size: 2.5rem;
   }
 
   .testimonial-image {
-    width: 40%;
+    width: 30%;
     margin: 20px;
   }
 
   .features-titles {
-    font-size: 2.3rem;
+    font-size: 3.0rem;
   }
 
   .features-subtitles {
-    font-size: 1.7rem;
+    font-size: 2.0rem;
   }
 
   .feature-icons {
-    font-size: 400%;
+    font-size: 450%;
+  }
+
+  .footer-icon {
+    margin: 15px 30px;
+    font-size: 250%;
+  }
+
+  .footer-text {
+    font-size: 1.5rem;
   }
 
 }
