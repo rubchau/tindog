@@ -12,9 +12,19 @@ h1 {
 
 /************ Class Selectors ************/
 
+/* General */
+
+.center {
+  text-align: center;
+}
+
+/***** Title Section *****/
+
 .container-fluid {
   padding: 3% 15% 5%;
 }
+
+/* Navigation Bar */
 
 .navbar {
   padding: 0 0 2.5rem;
@@ -27,11 +37,10 @@ h1 {
 }
 
 .nav-item {
-  padding: 0 18px;
+  margin: 0 18px;
 }
 
 .nav-link {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -41,7 +50,6 @@ h1 {
   margin: 5% 3% 5% 0;
 }
 
-
 /* Dog iPhone Image */
 .dog_phone_image {
   width: 60%;
@@ -50,14 +58,12 @@ h1 {
   right: 27%;
 }
 
-/* Features Section */
+/***** Features Section *****/
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
 
 .features-titles {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -78,7 +84,6 @@ h1 {
 
 /* Testimonials */
 .testimonial-text {
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
   line-height: 1.5;
@@ -118,13 +123,14 @@ h1 {
 }
 
 .cta-text {
-  font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: 900;
   font-size: 2.5rem;
   line-height: 1.5;
   padding-bottom: 20px;
 }
+
+/* Footer */
 
 .footer-icon {
   color: gray;
@@ -161,29 +167,24 @@ h1 {
 #testimonials {
   background-color: #ff4c68;
   color: white;
-  text-align: center;
 }
 
 #press {
   background-color: #ff4c68;
-  text-align: center;
   padding-bottom: 3%;
 }
 
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 
 #cta {
   background-color: #ff4c68;
   padding: 7% 19%;
-  text-align: center;
 }
 
 #footer {
   padding: 3% 3%;
-  text-align: center;
 }
 /********* Media Query Breakpoints *********/
 
@@ -191,6 +192,11 @@ h1 {
 
   #title {
     text-align: center;
+  }
+
+  .nav-item {
+    text-align: left;
+    margin: 0 0;
   }
 
   .dog_phone_image {
